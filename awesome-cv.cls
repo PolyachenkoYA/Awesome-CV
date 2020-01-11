@@ -229,7 +229,7 @@
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
 \newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfont\upshape\color{darktext}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
@@ -691,6 +691,16 @@
 }{%
 }
 
+% Define an intro-section for the cover letter
+% Usage: \letterintrosection
+\newcommand{\letterintrosection}[1]{%
+  \par\addvspace{2.5ex}
+  \phantomsection{}
+%  \lettersectionstyle{#1}
+  %\color{gray}\vhrulefill{0.9pt}
+  \par\nobreak\addvspace{0.4ex}
+}
+
 % Define a section for the cover letter
 % Usage: \lettersection{<section-title>}
 \newcommand{\lettersection}[1]{%
@@ -707,15 +717,15 @@
   \vspace{8.4mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \recipienttitlestyle{\@recipientname} & \letterdatestyle{\@letterdate}
-  \end{tabular*}
-  \begin{singlespace}
-    \recipientaddressstyle{\@recipientaddress} \\\\
-  \end{singlespace}
-  \ifthenelse{\isundefined{\@lettertitle}}
-    {}
-    {\lettertitlestyle{\@lettertitle} \\}
+%  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - %4.5cm} R{4.5cm}}
+%    \recipienttitlestyle{\@recipientname} & %\letterdatestyle{\@letterdate}
+%  \end{tabular*}
+%  \begin{singlespace}
+%    \recipientaddressstyle{\@recipientaddress} \\\\
+%  \end{singlespace}
+%  \ifthenelse{\isundefined{\@lettertitle}}
+%    {}
+%    {\lettertitlestyle{\@lettertitle} \\}
   \lettertextstyle{\@letteropening}
 }
 

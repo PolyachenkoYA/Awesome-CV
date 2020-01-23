@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[12pt, a4paper]{awesome-cv}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -95,19 +95,19 @@
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
 % The company being applied to
-\recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+%\recipient
+%  {Company Recruitment Team}
+%  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
 % The date on the letter, default is the date of compilation
-\letterdate{\today}
+%\letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Software Engineer}
+%\lettertitle{Job Application for Software Engineer}
 % How the letter is opened
 \letteropening{Dear Mr./Ms./Dr. LastName,}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}
+%\letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
@@ -136,20 +136,24 @@
 
 \letterintrosection
 
-\hspace{10pt} My name is Yury Polyachenko and I am a third-year undergraduate student at MIPT - one of the most famous and prestigious universities in physical sciences in Russia. I am applying for the EPFL E3 program because at EPFL I've found hosting labs which in my view correlate with my interests and background astoundingly well. Therefore here is my a bit structured tail about myself and why I think me and EPFL are a grate match:
-
 \lettersection{About Me}
-I've been fascinated about the idea of computer simulation since 9$^{th}$ school grade. At a particular moment back then I realized that it seemed I'd known enough to try to see how a system moves according to Newton's law without solving equations exactly as we always did in school. I spent next 2 years (10$^{th}$ and 11$^{th}$ grades) under the supervision of a head of a lab in the Institute of Astronomy RAS. I was modeling stellar dynamics in a galaxy and mastering various computer skills along the way. Because of my school achievements I could go to any Russian university with no exams required. I was leaning towards applied and computational physics and MIPT had the best Physics department in the country so that defined my choice. 
+My name is Yury Polyachenko, I am a 3rd-year undergraduate student at Moscow Institute of Physics and Technology (MIPT). I have been interested in computer simulations since the 9th grade of high school, where for 3 years I was studying spiral structure formation in galaxies both implementing C++ and Matlab code and running simulations using Agama package. Later on, as a freshman at MIPT, I joined Prof. Genri Norman’s lab of Computational Condensed Matter Physics and Life Systems. As my 1st project in this lab, I created a molecular dynamics (MD) package from scratch with an ultimate goal to test and improve MKT equations (see CV). 
 
-At the MIPT I continued to develop my computer skills and knowledge of physics. Regular courses success is represented by the GPA 4.99/5. My more specific interest still only grew and so did my skills. I say that because of a summer internship offer I got after my freshmen year from my CS seminarian who worked at MIPT in the <<Laboratory of Mechanical Systems and Processes Modeling>>. I've created a proof-of-concept model which was used for further studies. 
+Now, I have been working with Prof. Norman for over 2 years. I am currently investigating a discontinuity phenomenon in a stable-metastable phase transition in the Lennard-Jones system using LAMMPS and Matlab. I discovered a property which exhibits an anticipated disruption at the transition point, therefore enables detection of a phase transition as a possible application. Throughout my research, I delivered 2 oral reports at Russian national conferences and currently we are preparing our results for submission to PRL.
 
-At the same time in the beginning of my 2$^{nd}$ semester I found a lab where I though I wanted to try to dig deeper. The head of the lab was Genry Norman with whom I've been working for 2 years now. My first project where was devoted to simulation of self-diffusion in the Lerrand-Jones system. At the end of the year the project was elected top 10 of the class which consisted of $\sim$ 1100 people. I spent the 1$^{st}$ half of my sophomore year improving the project and preparing an oral report for the MIPT conference. The report was again a success -- I won 2$^{nd}$ place in the section among bachelors. After the exams I was occupied by nothing but regular studies. It happened so that a programmer position at the company my other CS seminarian was working in became available and I got accepted. During the work at IOGT I significantly improved my matlab skills because it was the main language. Before the end of the academic year I was accepted for the CECAM summer school at SISSA. In my 4$^{th}$ semester, right before the school, I'd completed a Molecular Dynamics course and got the best final grade in the class. So the summer school was a nice continuation and repetition of the completed course. Mark Tuckerman gave a series of lectures on that school and I really liked him and the topics he covered. I really enjoyed communicating with students from different cultures and specializations and explaining difficult moments to them. That gave me an idea to try teaching students. I knew that in Russia there is an educational center called Sirius where I can apply with a project and will guide a group of high school students if accepted. I applied with a new task I got from Norman by that time. I spent next month helping students master basic computer skills, physics and math essential for understanding and performing molecular dynamics. In the end they managed to run a simple simulation on  a remote server in LAMMPS and to verify basic laws such as energy conservation or maxwell distribution. At that moment I liked working with those kids because they were really motivated and eager for new things. I continued to work on the project and delivered an oral report in the New Athos in the August. Remembering the positive experience with kids I decided to try to teach freshmen. They did a new CS python course and I was relatively good in it, so that was it. For next 4 months I've been doing my research work and helping freshmen with python exercises. Averaged over longer period and over not so united group average motivation wasn't so high so I can't say I loved every moment of the process but it was an interesting experience. Updated project was presented on the 62$^{th}$ MIPT conference but I yet continued to work on it. At that point it was not only me but another 3$^{rd}$-year student and a PhD student. Our final results will be presented on the international ELBRUS 2020 conference. With Norman we are also working on an article. I hope now you have a certain understanding of my interests and my background. Thus I can move to questions <<why me for EPFL?>> and <<why EPFL for me?>>
+This past summer I attended CECAM SISSA MD school, where I had an opportunity to strengthen my knowledge in enhanced sampling, reversibility, polymer and protein dynamics. I was immensely excited about prof. Mark Tuckerman's lectures on applying ML and MD to the drug design. This experience spurred me on to continue exploring this field more. Therefore, in the fall term, I completed several courses on MD, HPC and ML at MIPT, being ranked as the top 1 in my class. I believe EPFL, being a very applied-oriented university and a major player in CECAM, provides an excellent opportunity to challenge myself with non-trivial problems related to my background and interests this summer. Therefore, I am interested in joining several scientific groups in which I believe I can fully realize my scientific potential.
 
-\lettersection{Why Google?}
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+\lettersection{Laboratory of Molecular Simulation}
+This lab offers many interesting projects, yet the one that intrigues me the most is the “Self-diffusion from a potential energy field” project since it is closely related to my research experience. As my first educational project on MD was about self-diffusion, I was greatly excited to learn how this lab's members pointed out ways to use TuTraSt for the real-world applications such as e.g. ion batteries and even for a very general and fundamental problem of studying chemical bonds in a molecule via electron density analysis. Moreover, in SISSA I had a practice on rare events and enhanced sampling where I learned about physical ideas close to ones behind the TuTraSt. I really liked the fusion of rigour and power in the idea of “compensating” the potential landscape of a system to make it better sample more extreme aka rare regions of configurational space. Finally, the lab’s tests for CH4 were conducted in LAMMPS, and it is mentioned that to speed up computations authors want to translate the code from Matlab to Python and C++. I have been working in LAMMPS in my current project and I consider myself proficient in all these 3 languages (see CV and git). So my computer skills will certainly be relevant in this project if I was to work on it.
 
-\lettersection{Why Me?}
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+\newpage
+
+\lettersection{Laboratory for Multiscale Mechanics Modeling lammm}
+Many recent lab’s publications have a molecular approach so my experience will be relevant. Furthermore, I am looking forward to mastering multiscale methods. I am particularly interested in the projects on neural network potentials, since I it combines the best from both DFT and classical potentials approaches. At MIPT I had a course "ML in condensed matter physics" where I became acquainted with basic ideas on using NN potentials. My final project for the course was to find a reasonable systematically improvable set of features and construct an ML potential for a crystal structure. In the end, I came up with an idea close to Moment Tensor Potentials. I believe there is a way to optimize and improve the methods currently used in the lab's research. I am interested in implementing the concept of “learning on the fly” which takes the idea of balancing the DFT and potential dynamics even further than traditional NN potentials. Thus it achieves accuracy close to the pure DFT with orders of magnitude less computational time.
+
+\lettersection{Theory and Simulation of Materials THEOS}
+This lab has a list of Masters Projects and they say those are adaptable for Bachelor Projects. At MIPT I have completed 1 semester of Landau-Lifshitz quantum mechanics course and received 10/10 grade. By this summer, I will complete the Landau-Lifshitz course on quantum mechanics. Therefore I think by that time I will be qualified to work on the adapted versions of offered masters projects since for most of them proper QM background is essential. Furthermore, having completed basic QM courses I will be looking forward to mastering DFT and other computational QM techniques and I believe THEOS lab to be a great place to do so. Besides QM, I have experience with Python and Jupyter, so I can work on the “Visualization plugins for the Materials Cloud platform” for which Python is the main demand.
+
 
 \end{cvletter}
 
@@ -157,7 +161,8 @@ Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sag
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter informations
 
-I guess the thing that was exiting me back when and still does in doing a physical simulations is that personally for me it has just right ratio of theory and practice in it. Also I like to see the result of what I am doing and computational physics provides me with such opportunity.
+To sum up, I am extremely interested in joining EPFL as a summer intern. The program would provide an excellent opportunity to develop both professionally and academically, which I believe would prove critical when applying for a doctoral degree program at EPFL. I thank you for your time and sincerely appreciate your consideration of my application. Please do not hesitate to contact me at \href{polyachenko.yua@phystech.edu}.
+
 
 \makeletterclosing
 

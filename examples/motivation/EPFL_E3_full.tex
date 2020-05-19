@@ -1,0 +1,169 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,left]{me.jpg}
+\name{Polyachenko}{Yury}
+\position{Intern for the EPFL E3 summer program}
+\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\name{POLYACHENKO}{Yury}
+%\position{Intern for EPFL E3 summer program}
+\address{Krasnogo Mayaka Street 13А, b. 6, Moscow, Russia, 117570}
+
+\mobile{+7(903)531-34-25}
+\email{polyachenko.yua@phystech.edu}
+%\homepage{www.posquit0.com}
+\github{polyachenkoya}
+\linkedin{polyachenkoya}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+\skype{polyachenkoya}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+%\recipient
+%  {Company Recruitment Team}
+%  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+%\letterdate{\today}
+% The title of the letter
+%\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\thepage}
+  {Polyachenko Yury~~~·~~~Statement of purpose}
+  {\thepage}
+
+% Print the title with above letter informations
+%\makelettertitle
+\vspace{25pt}
+\hspace{5pt} Dear members of the selection committee, 
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\letterintrosection
+
+\lettersection{About Me}
+My name is Yury Polyachenko. I am a 3rd-year undergraduate student at the Moscow Institute of Physics and Technology (MIPT). I have been interested in computer simulations since the 9th grade of high school, where I was studying spiral structure formation in galaxies for 3 years, both implementing C++ and Matlab code and running simulations using the Agama package. Later on, as a freshman at MIPT, I joined Prof. Genri Norman's lab of Computational Condensed Matter Physics and Life Systems. As my 1st project in this lab, I created a molecular dynamics (MD) package from scratch with an ultimate goal to test and improve MKT equations (see CV). 
+
+Now, I have been working with Prof. Norman for over 2 years. I am currently investigating a discontinuity phenomenon in a stable-metastable phase transition in the Lennard-Jones system using LAMMPS and Matlab. I discovered a property that exhibits an anticipated disruption at the transition point, therefore enables the detection of a phase transition as a possible application. Throughout my research, I delivered 2 oral reports at Russian national conferences, and we are currently preparing our results for submission to PRL.
+
+Last summer I attended CECAM SISSA MD school, where I had an opportunity to strengthen my knowledge in enhanced sampling, Monte Carlo, simulation reversibility, polymer and protein dynamics. I was immensely excited by Prof. Mark Tuckerman's lectures on applying ML and MD to the drug design. This experience spurred me on to continue exploring this field more. Therefore, in the fall term, I completed several courses on MD, HPC and ML at MIPT, being ranked as the top 1 in my class. I believe EPFL, being a very applied-oriented university and a major player in CECAM, provides an excellent opportunity to challenge myself with non-trivial problems related to my background and interests this summer. Therefore, I am interested in joining several scientific groups in which I believe I can fully realize my scientific potential.
+
+\lettersection{Laboratory of Molecular Simulation}
+This lab offers many exciting projects, yet the one that intrigues me the most is the <<Self-diffusion from a potential energy field>> project since it is closely related to my research experience. My first educational project on MD was about self-diffusion. So I was excited to learn how this lab's members pointed out ways to use TuTraSt for real-world applications such as, e.g., ion batteries and even for a very general and fundamental problem of studying chemical bonds in a molecule via electron density analysis. Moreover, in SISSA, I had a practice on rare events and enhanced sampling where I learned about physical ideas close to ones behind the TuTraSt. I was fascinated by the fusion of rigor and power in the idea of <<compensating>> the potential landscape of a system to make it better sample more extreme, aka rare regions of configurational space. Finally, the lab's tests for CH4 were conducted in LAMMPS, and it is mentioned that to speed up computations, authors want to translate the code from Matlab to Python and C++. I have been working in LAMMPS in my current project, and I consider myself proficient in all these three languages (see CV and git). So my computer skills will surely be relevant in this project if I was to work on it.
+
+\newpage
+
+\lettersection{Laboratory for Multiscale Mechanics Modeling lammm}
+Many recent lab's publications employ a molecular approach, so my experience will be relevant. Furthermore, I am looking forward to mastering multiscale methods. I am particularly interested in the projects on neural network potentials since they combine the best from both DFT and classical potential approaches. At MIPT I had a course <<ML in condensed matter physics>>, where I became acquainted with basic concepts on using NN potentials. My final project for the class was to find a reasonable and systematically improvable set of features and construct an ML potential for a crystal structure. In the end, I came up with an idea close to Moment Tensor Potentials. I believe there is a way to optimize and improve the methods currently used in the lab's research (e.g., 2017 article on NN). I am interested in implementing the concept of <<learning on the fly>>, which takes the balancing the DFT with potential dynamics even further than traditional NN potentials. Thus it achieves accuracy close to the pure DFT with orders of magnitude less computational time.
+
+\lettersection{Theory and Simulation of Materials THEOS}
+This lab has a list of Master's Projects, and they say those are adaptable for Bachelor Projects. At MIPT, I have already completed the first part of the Landau-Lifshitz course on quantum mechanics with 10/10 grade and will finish with the whole course by summer. Therefore I think by that time, I will be qualified to work on the adapted versions of offered masters projects since proper QM background is essential for most of them. Furthermore, having completed basic QM courses, I will be looking forward to mastering DFT and other computational QM techniques, and I believe THEOS lab to be a great place to do so. Besides QM, I have experience with Python and Jupyter, so I can work on the <<Visualization plugins for the Materials Cloud platform>> for which Python is the primary demand.
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+
+To sum up, I am immensely interested in joining EPFL as a summer intern. The program would provide an excellent opportunity to develop both professionally and academically, which I believe would prove critical when applying for a doctoral degree program at EPFL. I thank you for your time, and I sincerely appreciate your consideration of my application. Please do not hesitate to contact me at \href{mailto:polyachenko.yua@phystech.edu}{polyachenko.yua@phystech.edu}.
+
+
+\makeletterclosing
+
+\end{document}

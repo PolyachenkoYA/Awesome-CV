@@ -1,0 +1,166 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,left]{me.jpg}
+\name{Polyachenko}{Yury}
+\position{Intern for the CERN Summer program}
+\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\name{POLYACHENKO}{Yury}
+%\position{Intern for EPFL E3 summer program}
+\address{Krasnogo Mayaka Street 13А, b. 6, Moscow, Russia, 117570}
+
+\mobile{+7(903)531-34-25}
+\email{polyachenko.yua@phystech.edu}
+%\homepage{www.posquit0.com}
+\github{polyachenkoya}
+\linkedin{polyachenkoya}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+\skype{polyachenkoya}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+%\recipient
+%  {Company Recruitment Team}
+%  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+%\letterdate{\today}
+% The title of the letter
+%\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\thepage}
+  {Polyachenko Yury~~~·~~~Statement of purpose}
+  {\thepage}
+
+% Print the title with above letter informations
+%\makelettertitle
+\vspace{25pt}
+\hspace{5pt} Dear members of the selection committee, 
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\letterintrosection
+
+\lettersection{About Me}
+My name is Yury Polyachenko. I am a 3rd-year undergraduate student at the Moscow Institute of Physics and Technology (MIPT). I have been interested in physics and computer science since high school. In the 9th grade, I became acquainted with the Monte-Carlo method, C++, and OpenGL while modeling the neutron transfer process after a pulse. Such simulations are an essential step in solving inverse problems in geophysical well-logging. After that, for 2 years, I had been studying spiral structure formation in galaxies implementing C++ and Matlab code and running simulations using the Agama package. I have also mastered the basics of parallel computations and got acquainted with OpenMP at that time. 
+
+Later on, as a freshman at MIPT, I joined Prof. Genri Norman’s lab of Computational Condensed Matter Physics and Life Systems. As my 1st project in this lab, I created a molecular dynamics (MD) package from scratch with an ultimate goal to test and improve Kinetic Molecular Theory equations. By now, I have been working with Prof. Norman and Prof. Timofeev for over 2 years. I am currently investigating a discontinuity phenomenon in a stable-metastable phase transition in the Lennard-Jones system using LAMMPS and Matlab. I discovered a property that exhibits an anticipated disruption at the transition point, therefore enables the detection of a phase transition as a possible application. Throughout my research, I delivered 2 oral reports at Russian national conferences, and we are currently preparing our results for submission to PRL. 
+
+\lettersection{Physics}
+As you can see from my CV and the written above, I like the fusion of physics and CS in all its forms. I have done Monte-Carlo, N-body, Mechanical modeling, Molecular dynamics, Machine learning, CPU and GPU optimizations and parallelization, and even GUI programming. So I am actively searching for a field to settle and to start digging deeper. I have been doing pretty well wit MD so far. But in the last semester, I keenly began to study the Landau-Lifshitz quantum mechanics course, and I loved the beauty of describing the whole world from just a few fundamental and universal ideas. I got a 10/10 final grade for the 1st part of the course, and I will complete the course by this summer. Therefore your internship will be a remarkable opportunity for me to dive deeper into QM under the best specialists in the world and to possibly even shift my main interest to the fundamental questions LHC was built for. 
+
+\newpage
+
+\lettersection{Data science, ML \& HPC}
+Aside from QM, I hope to improve my knowledge and understanding of statistics and probability theory during your program. I believe data analysis methods to be not less valuable for the final result than the physical foundation of an experiment. And again, CERN is one of the best places in the world where I can master everything related to the processing of experimental data. Another key ingredient for successful extraction of meaning from petabytes of faceless data is the ways to operate with the data. As you can see in my CV, I have experience in HPC, and I understand the ideas behind parallelization and software optimization as I have implemented CUDA, MPI, and other technologies in my projects. Speaking of modern data analysis, one can not leave ML aside. The fact, that LHC groups such as ATLAS, CMS, and LHCb posted a Kaggle contest, alone is a big deal. I completed ML courses at my home university and on Coursera. Summing up, I think I am now capable of gaining the full benefit from the CS lectures and projects that will be offered on the internship.
+
+\lettersection{Team work \& social connections}
+Besides the scientific vector of my development, I find the interpersonal content of your internship extremely important. I like explaining things I understand to others. I adore the atmosphere of late-evening discussion on a problem you didn’t manage to do for the whole day, and now you are brainstorming it with your mates searching for insight. E.g., I have guided a group of highly motivated school students through the basics of math, physics, and CS necessary for performing molecular simulations. I also was a mentor for a CS python course, and there were several situations when I was working with a student on a problem far long after the end of a class. The sense of mutual engagement was truly priceless. I believe the CERN internship to be the place where chances of finding people equally excited by the process of solving a problem are exceptionally high. Additionally, I think I still need more practice in group communications since most of my positive communication experience was one-o-one. Again, I think your internship is the best place for such practices because of lectures where everyone will be genuinely into the subject.
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+
+To sum everything up, I am immensely interested in joining CERN as a summer intern. The program would provide an excellent opportunity to develop both professionally and academically. I thank you for your time, and I sincerely appreciate your consideration of my application. Please do not hesitate to contact me at \href{mailto:polyachenko.yua@phystech.edu}{polyachenko.yua@phystech.edu}.
+
+\makeletterclosing
+
+\end{document}

@@ -63,13 +63,10 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,edge,left]{me.jpg}
-\name{Polyachenko}{Yury}
-\position{Intern for the ETH Amgen program}
-\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
-\name{POLYACHENKO}{Yury}
-%\position{Intern for EPFL E3 summer program}
-\address{Krasnogo Mayaka Street 13А, b. 6, Moscow, Russia, 117570}
+\name{Поляченко}{Юрий}
+\position{\underline{Позиция}: Студент международной Суперкомпьютерной Академии}
+\address{4 курс ЛФИ \textbf{ФОПФ}/ФПФЭ МФТИ, ОП ВФКСиЖС}
 
 \mobile{+7(903)531-34-25}
 \email{polyachenko.yua@phystech.edu}
@@ -121,7 +118,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\thepage}
-  {Polyachenko Yury~~~·~~~Statement of purpose}
+  {Поляченко Юрий~~~·~~~Мотивационное письмо}
   {\thepage}
 
 % Print the title with above letter informations
@@ -134,22 +131,24 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\lettersection{About Me}
-My name is Yury Polyachenko. I am a 3rd-year undergraduate student at the Moscow Institute of Physics and Technology (MIPT). As a freshman, I joined Prof. Genri Norman's lab of Computational Condensed Matter Physics and Life Systems. Now, I have been working there for over 2 years. I am currently investigating a discontinuity phenomenon in a stable-metastable phase transition in the Lennard-Jones system using LAMMPS and Matlab. Last summer, I attended the CECAM SISSA Molecular Dynamics (MD) school, where I studied polymer and protein dynamics and was fascinated by Prof. Mark Tuckerman's lectures on applying machine learning (ML) and MD to the drug design. Being intrigued, I completed courses on MD, high performance computing (HPC), and ML at MIPT. I want to continue exploring physical phenomena in biological systems both theoretically and numerically. I believe ETH provides an excellent opportunity to challenge myself with more bio-oriented yet related to my background problems. Therefore, I am interested in joining several scientific groups in which I believe I can fully realize my scientific potential.
+\lettersection{Обо мне}
+Меня зовут Поляченко Юрий, сейчас я окончил 3 курса бакалавриата ФОПФ МФТИ на образовательной программе <<Выч. физика конд. сост. и живых систем>>. Я интересовался физическим  моделированием и вычислениями с 10 класса. С тех пор я занимался N-body моделированием формирования спиральной структуры галактик из равномерного диска, а так же переносом нейтронов в кусочно-однородной среде (аля MCNP). 
 
-\lettersection{Laboratory for Movement Biomechanics}
-The vast majority of master's projects offered in the lab employ Matlab, in which I am fluent. I believe my solid background in theoretical mechanics will be useful since most of the projects deal with mechanical macro movement. Specifically, I am excited by Rosa's project on ML for analysis of walking. Besides Matlab, I have some experience in Python, ML, and ML in Python, which I believe to be crucial skills for the project. I am interested in ML not only in a coding context but on a more fundamental level. For instance, while working on a final project on the ML course at MIPT, I came up with an idea of using generalized tensors of inertia as robust features for learning. That turned out to be close to the Moment Tensor Potentials. That required fluency in theoretical mechanics and a more holistic and sophisticated approach than needed in regular ML exercises commonly offered on introductory ML courses.
+В МФТИ под куроводством Нормана Генри Эдгаровича я исследовал Леннард-Джонсовскую систему как с вычислительной так и с физической точек зрения. Я писал различные схемы распараллеливания Л-Дж на CPU (OpenMP, MPI) и на GPU (CUDA). С помощью пакета LAMMPS я исследовал микроскопически-коллективное поведение Л-Дж частиц вблизи кривой фазового равновестия. Работа докладывалась на международной конференции ELBRUS2020 и сейчас under review в PRL. 
 
-\lettersection{Computational Models of Morphogenesis}
-I have a solid background in theoretical mechanics, differential equations, and computational mathematics. On the physical side, during my 6th semester, I am attending a "Soft Matter Physics" course, which will focus on membrane and tissue dynamics. Therefore, I think my background will quite fit the lab's LBIBCell project, and it will be fascinating for me to work on. So far, I have dealt with a multiscale approach, and it often can be useful to process boundary conditions in fluid dynamics. Those are one of the key points of the LBIBCell project. My first research project was about diffusion, which is another crucial piece of the lab's project. Finally, the possibility of 3D generalization of the project and emerging optimization issues are mentioned. For these problems, I believe I can make use of my mathematical background and HPC skills in C++.
+\lettersection{Текущая работа}
+Сейчас под руководством Стегайлова Владимира Владимировича я с использованием GROMACS занимаюсь in-silico воспроизведением эксперимента с кристаллическим белком. Задача является вычислительно сложной, т.к. необходимо исследовать взаимосвязь физических параметров, для чего необходимо делать расчеты по многомерным сеткам параметров, а система белок-вода может быть заметно неоднородной и к тому же содержать большое количество атомов. Данные еще набираются, но уже на текущем этапе 1 траектория может занимать до 30 Гб в формате xtc.
+
+Так же на стажировке в EPFL в лаборатории \href{https://www.epfl.ch/labs/lbm/}{LBM} я работаю над проверкой применимости метода MaSIF-site для докинга белков в воде. Каждая траектория, содержащая 50,000 дампов и занимающая $\sim 5$ Гб в xtc, требует попарного анализа кадров, что создает вычислительно-сложную задачу.
+
+Пост-обработка результатов в обоих проектах происходит с использованием python.
+
+\lettersection{Академия}
+В связи с моими интересами и задачами, стоящими в моей текущей работе, я хочу пройти трек <<Python для HPC>>. Я думаю, программа данного трека поможет мне эффективнее реализовывать обработку данных на python в моих текущих работах. К тому же, я планирую продолжать исследования в области вычислитеной биофизики, а в этой области python является общепринятым стандартом как обработки, так и часто даже генерации данных, поэтому я считаю, что изучание HPC-стороны этого языка поможет мне в целом в проффесиональном развитии.
 
 \end{cvletter}
 
-%-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
-To sum up, I am immensely interested in joining ETH Amgen as a summer intern. The program would provide an excellent opportunity to develop both professionally and academically, which I believe would prove critical when applying for a doctoral degree program at ETH. I thank you for your time, and I genuinely appreciate your consideration of my application. Please do not hesitate to contact me at \newline \href{mailto:polyachenko.yua@phystech.edu}{polyachenko.yua@phystech.edu}.
-
-Sincerely,   Yury POLYACHENKO.
+С уважением, Поляченко Юрий
 
 %\makeletterclosing
 

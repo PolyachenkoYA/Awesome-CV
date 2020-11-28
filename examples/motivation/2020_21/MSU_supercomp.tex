@@ -1,0 +1,156 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,left]{me.jpg}
+
+\name{Поляченко}{Юрий}
+\position{\underline{Позиция}: Студент международной Суперкомпьютерной Академии}
+\address{4 курс ЛФИ \textbf{ФОПФ}/ФПФЭ МФТИ, ОП ВФКСиЖС}
+
+\mobile{+7(903)531-34-25}
+\email{polyachenko.yua@phystech.edu}
+%\homepage{www.posquit0.com}
+\github{polyachenkoya}
+\linkedin{polyachenkoya}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+\skype{polyachenkoya}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+%\recipient
+%  {Company Recruitment Team}
+%  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+%\letterdate{\today}
+% The title of the letter
+%\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\thepage}
+  {Поляченко Юрий~~~·~~~Мотивационное письмо}
+  {\thepage}
+
+% Print the title with above letter informations
+%\makelettertitle
+%\vspace{5pt}
+%\hspace{5pt} 
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Обо мне}
+Меня зовут Поляченко Юрий, сейчас я окончил 3 курса бакалавриата ФОПФ МФТИ на образовательной программе <<Выч. физика конд. сост. и живых систем>>. Я интересовался физическим  моделированием и вычислениями с 10 класса. С тех пор я занимался N-body моделированием формирования спиральной структуры галактик из равномерного диска, а так же переносом нейтронов в кусочно-однородной среде (аля MCNP). 
+
+В МФТИ под куроводством Нормана Генри Эдгаровича я исследовал Леннард-Джонсовскую систему как с вычислительной так и с физической точек зрения. Я писал различные схемы распараллеливания Л-Дж на CPU (OpenMP, MPI) и на GPU (CUDA). С помощью пакета LAMMPS я исследовал микроскопически-коллективное поведение Л-Дж частиц вблизи кривой фазового равновестия. Работа докладывалась на международной конференции ELBRUS2020 и сейчас under review в PRL. 
+
+\lettersection{Текущая работа}
+Сейчас под руководством Стегайлова Владимира Владимировича я с использованием GROMACS занимаюсь in-silico воспроизведением эксперимента с кристаллическим белком. Задача является вычислительно сложной, т.к. необходимо исследовать взаимосвязь физических параметров, для чего необходимо делать расчеты по многомерным сеткам параметров, а система белок-вода может быть заметно неоднородной и к тому же содержать большое количество атомов. Данные еще набираются, но уже на текущем этапе 1 траектория может занимать до 30 Гб в формате xtc.
+
+Так же на стажировке в EPFL в лаборатории \href{https://www.epfl.ch/labs/lbm/}{LBM} я работаю над проверкой применимости метода MaSIF-site для докинга белков в воде. Каждая траектория, содержащая 50,000 дампов и занимающая $\sim 5$ Гб в xtc, требует попарного анализа кадров, что создает вычислительно-сложную задачу.
+
+Пост-обработка результатов в обоих проектах происходит с использованием python.
+
+\lettersection{Академия}
+В связи с моими интересами и задачами, стоящими в моей текущей работе, я хочу пройти трек <<Python для HPC>>. Я думаю, программа данного трека поможет мне эффективнее реализовывать обработку данных на python в моих текущих работах. К тому же, я планирую продолжать исследования в области вычислитеной биофизики, а в этой области python является общепринятым стандартом как обработки, так и часто даже генерации данных, поэтому я считаю, что изучание HPC-стороны этого языка поможет мне в целом в проффесиональном развитии.
+
+\end{cvletter}
+
+С уважением, Поляченко Юрий
+
+%\makeletterclosing
+
+\end{document}
+

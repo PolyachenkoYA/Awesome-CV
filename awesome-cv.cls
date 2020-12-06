@@ -80,6 +80,8 @@
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
+% Needed for inverse enumerate for publications
+\RequirePackage{etaremune}
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
 \hypersetup{%
@@ -702,14 +704,15 @@
 }
 
 % Define an environment for cvenum(for cventry)
-\newenvironment{cvenum}{%
+\newenvironment{pubenum}{%
   \vspace{-4.0mm}
   \begin{justify}
-  \begin{enumerate}[leftmargin=2ex, nosep, noitemsep]
+  %\begin{enumerate}[leftmargin=2ex, nosep, noitemsep]
+  \begin{etaremune}[leftmargin=2ex]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
-  \end{enumerate}
+  \end{etaremune}
   \end{justify}
   \vspace{-4.0mm}
 }
